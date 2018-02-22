@@ -1,0 +1,25 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-button routerLink="/">
+      <mat-icon>home</mat-icon> Home</button>
+    <button mat-button routerLink="/contact">
+      <mat-icon>
+        <i class="material-icons">mail_outline</i>
+      </mat-icon>Contact Us !</button>
+      <span class="example-spacer"></span>
+      <button mat-button  routerLink="/search">
+        <mat-icon>search</mat-icon>Search</button>
+    <button mat-button [matMenuTriggerFor]="menu">
+      <mat-icon>account_box</mat-icon>Profile</button>
+    <mat-menu #menu="matMenu" yPosition="above">
+      <button mat-menu-item routerLink="/login">
+        <mat-icon>lock</mat-icon>Login</button>
+      <button mat-menu-item routerLink="/register">
+        <mat-icon>vpn_key</mat-icon>SignUp</button>
+    </mat-menu>
+
+    </mat-toolbar-row>
+</mat-toolbar>
+
+
+
